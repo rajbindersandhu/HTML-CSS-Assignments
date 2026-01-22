@@ -1,0 +1,31 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+}
+
+.container{
+    background-color: white;
+    height:100vh;
+}
+
+.btn-container{
+    width: 85%;
+    text-align: center;
+    /* margin: 20px auto; */
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    box-shadow: 1px 4px 15px gray;
+    background-color: white;
+}
+
+.btn-container button{
+    width:100%;
+    max-width:100px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+    color:white;
+}
