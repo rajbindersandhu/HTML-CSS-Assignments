@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="selector-container">
+            <h3>Form Selector</h3>
+            <form id="selector-form">
+                <lable for="tags">
+                    Select the Input type:
+                    <select name="tags" id="tags">
+                        <option value="input-text">text</option>
+                        <option value="input-number">number</option>
+                        <option value="input-email">email</option>
+                        <option value="input-password">password</option>
+                        <option value="input-checkbox">checkbox</option>
+                        <option value="input-radio">radio</option>
+                    </select>
+                </lable>
+                <br/>
+                <lable for="lables">
+                    Enter label for tag:
+                    <input type="text" id="lables" name="labels" />
+                </lable>
+                <br/>
+                <label for="tagId">
+                    Enter ID for tag:
+                    <input type="text" id="tagId", name="tagId"/>
+                </label>
+                <br/>
+                <label for="tagClass">
+                    Enter class name:
+                    <input type="text" name="tagClass" id="tagClass" />
+                </label>
+                <br/>
+                <label for="tagName">
+                    Enter name attribute for tag:
+                    <input type="text" name="tagName" id="tagName" />
+                </label>
+                <br/>
+                <label for="tagValue">
+                    Enter value attribute for tag:
+                    <input type="text" name="tagValue" id="tagValue" />
+                </label>
+                <br/>
+                <button id="addBtn" tyoe="button">Add to form</button>
+            </form>
+        </div>
+        <div id="preview-container">
+            <h3>Form Preview</h3>
+            <form id="preview-form"></form>
+        </div>
+    </div>
+</body>
+</html>
