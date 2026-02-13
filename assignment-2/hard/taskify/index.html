@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="dist/index.js" defer></script>
+</head>
+<body>
+    <div id="task-container">
+        <h1>New Task</h1>
+        <form id="task-form">
+            <label for="name">
+                Enter new Task: 
+                <input type="text" id="name" name="name" required/>
+            </label>
+            <br/>
+            <label for="level">
+                Select level of task: 
+                <select id="level" name="level" required>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </label>
+            <br/>
+            <label for="description">
+                Enter description for task:
+                <textarea id="description" name="description"></textarea>
+            </label>
+            <br/>
+            <button id="create-task">Create Task</button>
+        </form>
+    </div>
+    <div id="container">
+        <div id="new-task" class="panel">
+            <h2>New Task</h2>
+            <button type="button" id="addBtn">Add new task</button>
+            <div id="new-task-list" class="task-list"></div>
+            
+        </div>
+        <div id="in-process" class="panel">
+            <h2>In process</h2>
+            <div id="inprocess-list" class="task-list"></div>
+        </div>
+        <div id="in-review" class="panel">
+            <h2>In review</h2>
+            <div id="in-review-list" class="task-list"></div>
+        </div>
+        <div id="done" class="panel">
+            <h2>Done</h2>
+            <div id="done-list" class="task-list"></div>
+        </div>
+    </div>
+</body>
+</html>
